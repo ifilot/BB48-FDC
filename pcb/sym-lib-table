@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BB48")(type "KiCad")(uri "${KIPRJMOD}/components/BB48.kicad_sym")(options "")(descr "Olimex RP2350-PICO2-BB48 module symbols"))
+  (lib (name "FDC_Interface")(type "KiCad")(uri "${KIPRJMOD}/components/FDC_Interface.kicad_sym")(options "")(descr "Floppy-drive interface symbols"))
+  (lib (name "P2000T")(type "KiCad")(uri "${KIPRJMOD}/components/P2000T.kicad_sym")(options "")(descr "Philips P2000T expansion-interface symbols"))
+)

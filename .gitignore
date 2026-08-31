@@ -1,0 +1,28 @@
+# KiCad per-user state and caches
+*.kicad_prl
+fp-info-cache
+
+# KiCad locks, autosaves, backups, and local history
+~*.lck
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*.kicad_wks-bak
+*-backups/
+.history/
+
+# Generated electrical/mechanical interchange files
+*.net
+*.dsn
+*.ses
+
+# Project-local generated output directories
+.validation/
+fabrication/
+gerbers/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

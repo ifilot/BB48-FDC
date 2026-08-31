@@ -1,0 +1,678 @@
+(kicad_symbol_lib
+  (version 20231120)
+  (generator "kicad_symbol_editor")
+
+  (symbol "FDD_34_HOST"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no) (in_bom yes) (on_board yes)
+    (property "Reference" "J" (at -15.24 24.13 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Value" "FDD_34_HOST" (at 15.24 24.13 0) (effects (font (size 1.27 1.27)) (justify right bottom)))
+    (property "Footprint" "Connector_IDC:IDC-Header_2x17_P2.54mm_Vertical" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Datasheet" "https://ftpmirror.your.org/pub/misc/bitsavers/pdf/teac/FD-235HFA5XX_Specification_Rev_B.pdf" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Description" "Host-side 34-pin PC/Shugart floppy-drive interface; pin 3 is polarization key" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "ki_keywords" "floppy FDD Shugart IDC 34" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "ki_fp_filters" "IDC*2x17*P2.54mm*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (symbol "FDD_34_HOST_0_1"
+      (rectangle (start -15.24 22.86) (end 15.24 -22.86) (stroke (width 0.254) (type default)) (fill (type background)))
+      (text "HOST / CONTROLLER" (at 0 21.59 0) (effects (font (size 0.9 0.9) (bold yes))))
+      (text "GND: 1, 5, 7...33" (at -8.89 -21.59 0) (effects (font (size 0.8 0.8))))
+      (text "PIN 3 = KEY" (at 8.89 -21.59 0) (effects (font (size 0.8 0.8))))
+    )
+    (symbol "FDD_34_HOST_1_1"
+      (pin passive line (at 17.78 20.32 180) (length 2.54) (name "~{DENSEL}" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
+      (pin no_connect line (at 17.78 17.78 180) (length 2.54) (name "NC" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 0.9 0.9)))))
+      (pin no_connect line (at 17.78 15.24 180) (length 2.54) (name "NC" (effects (font (size 0.9 0.9)))) (number "6" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 12.7 180) (length 2.54) (name "~{INDEX}" (effects (font (size 0.9 0.9)))) (number "8" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 10.16 180) (length 2.54) (name "~{MOTEA}" (effects (font (size 0.9 0.9)))) (number "10" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 7.62 180) (length 2.54) (name "~{DRVSB}" (effects (font (size 0.9 0.9)))) (number "12" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 5.08 180) (length 2.54) (name "~{DRVSA}" (effects (font (size 0.9 0.9)))) (number "14" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 2.54 180) (length 2.54) (name "~{MOTEB}" (effects (font (size 0.9 0.9)))) (number "16" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 0 180) (length 2.54) (name "~{DIR}" (effects (font (size 0.9 0.9)))) (number "18" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -2.54 180) (length 2.54) (name "~{STEP}" (effects (font (size 0.9 0.9)))) (number "20" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -5.08 180) (length 2.54) (name "~{WDATA}" (effects (font (size 0.9 0.9)))) (number "22" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -7.62 180) (length 2.54) (name "~{WGATE}" (effects (font (size 0.9 0.9)))) (number "24" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -10.16 180) (length 2.54) (name "~{TRK0}" (effects (font (size 0.9 0.9)))) (number "26" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -12.7 180) (length 2.54) (name "~{WPT}" (effects (font (size 0.9 0.9)))) (number "28" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -15.24 180) (length 2.54) (name "~{RDATA}" (effects (font (size 0.9 0.9)))) (number "30" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -17.78 180) (length 2.54) (name "~{SIDE1}" (effects (font (size 0.9 0.9)))) (number "32" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 17.78 -20.32 180) (length 2.54) (name "~{DSKCHG}" (effects (font (size 0.9 0.9)))) (number "34" (effects (font (size 0.9 0.9)))))
+      (pin power_in line (at 0 -25.4 90) (length 2.54) (name "GND" (effects (font (size 0.8 0.8)) (hide yes))) (number "1" (effects (font (size 0.8 0.8)) (hide yes))))
+      (pin no_connect line (at -17.78 20.32 0) (length 2.54) (name "KEY" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "5" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "7" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "9" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "11" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "13" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "15" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "17" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "19" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "21" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "23" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "25" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "27" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "29" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "31" (effects (font (size 0.8 0.8)))))
+      (pin passive line (at 0 -25.4 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 0.8 0.8)))) (number "33" (effects (font (size 0.8 0.8)))))
+    )
+  )
+  (symbol "C"
+    (pin_numbers hide) (pin_names hide)
+    (exclude_from_sim no) (in_bom yes) (on_board yes)
+    (property "Reference" "C" (at 2.54 0.635 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Value" "100n" (at 2.54 -1.905 0) (effects (font (size 1.27 1.27)) (justify left top)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 0.9652 -3.81 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Description" "Unpolarized capacitor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (symbol "C_0_1"
+      (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+      (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+    )
+    (symbol "C_1_1"
+      (pin passive line (at 0 3.81 270) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 0 -3.81 90) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+    )
+  )
+  (symbol "74LVC14"
+  	(pin_names
+  		(offset 1.016)
+  	)
+  	(exclude_from_sim no)
+  	(in_bom yes)
+  	(on_board yes)
+  	(in_pos_files yes)
+  	(duplicate_pin_numbers_are_jumpers no)
+  	(property "Reference" "U"
+  		(at 0 1.27 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "Value" "74LVC14"
+  		(at 0 -1.27 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LVC14"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "Description" "Hex inverter schmitt trigger"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "ki_locked" ""
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "ki_keywords" "HCMOS not inverter"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "ki_fp_filters" "SOIC*14*3.9x8.7mm*P1.27mm*"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_1_0"
+  		(polyline
+  			(pts
+  				(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+  			)
+  			(stroke
+  				(width 0.254)
+  				(type default)
+  			)
+  			(fill
+  				(type background)
+  			)
+  		)
+  		(pin input line
+  			(at -7.62 0 0)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "1"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin output inverted
+  			(at 7.62 0 180)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "2"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_1_1"
+  		(polyline
+  			(pts
+  				(xy -2.54 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27) (xy 0 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  		(polyline
+  			(pts
+  				(xy -1.905 -1.27) (xy -1.905 1.27) (xy -0.635 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_2_0"
+  		(polyline
+  			(pts
+  				(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+  			)
+  			(stroke
+  				(width 0.254)
+  				(type default)
+  			)
+  			(fill
+  				(type background)
+  			)
+  		)
+  		(pin input line
+  			(at -7.62 0 0)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "3"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin output inverted
+  			(at 7.62 0 180)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "4"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_2_1"
+  		(polyline
+  			(pts
+  				(xy -2.54 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27) (xy 0 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  		(polyline
+  			(pts
+  				(xy -1.905 -1.27) (xy -1.905 1.27) (xy -0.635 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_3_0"
+  		(polyline
+  			(pts
+  				(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+  			)
+  			(stroke
+  				(width 0.254)
+  				(type default)
+  			)
+  			(fill
+  				(type background)
+  			)
+  		)
+  		(pin input line
+  			(at -7.62 0 0)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "5"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin output inverted
+  			(at 7.62 0 180)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "6"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_3_1"
+  		(polyline
+  			(pts
+  				(xy -2.54 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27) (xy 0 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  		(polyline
+  			(pts
+  				(xy -1.905 -1.27) (xy -1.905 1.27) (xy -0.635 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_4_0"
+  		(polyline
+  			(pts
+  				(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+  			)
+  			(stroke
+  				(width 0.254)
+  				(type default)
+  			)
+  			(fill
+  				(type background)
+  			)
+  		)
+  		(pin output inverted
+  			(at 7.62 0 180)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "8"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -7.62 0 0)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "9"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_4_1"
+  		(polyline
+  			(pts
+  				(xy -2.54 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27) (xy 0 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  		(polyline
+  			(pts
+  				(xy -1.905 -1.27) (xy -1.905 1.27) (xy -0.635 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_5_0"
+  		(polyline
+  			(pts
+  				(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+  			)
+  			(stroke
+  				(width 0.254)
+  				(type default)
+  			)
+  			(fill
+  				(type background)
+  			)
+  		)
+  		(pin output inverted
+  			(at 7.62 0 180)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "10"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -7.62 0 0)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "11"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_5_1"
+  		(polyline
+  			(pts
+  				(xy -2.54 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27) (xy 0 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  		(polyline
+  			(pts
+  				(xy -1.905 -1.27) (xy -1.905 1.27) (xy -0.635 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_6_0"
+  		(polyline
+  			(pts
+  				(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+  			)
+  			(stroke
+  				(width 0.254)
+  				(type default)
+  			)
+  			(fill
+  				(type background)
+  			)
+  		)
+  		(pin output inverted
+  			(at 7.62 0 180)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "12"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -7.62 0 0)
+  			(length 3.81)
+  			(name ""
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "13"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_6_1"
+  		(polyline
+  			(pts
+  				(xy -2.54 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27) (xy 0 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  		(polyline
+  			(pts
+  				(xy -1.905 -1.27) (xy -1.905 1.27) (xy -0.635 1.27)
+  			)
+  			(stroke
+  				(width 0)
+  				(type default)
+  			)
+  			(fill
+  				(type none)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_7_0"
+  		(pin power_in line
+  			(at 0 -12.7 90)
+  			(length 5.08)
+  			(name "GND"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "7"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin power_in line
+  			(at 0 12.7 270)
+  			(length 5.08)
+  			(name "VCC"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "14"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "74LVC14_7_1"
+  		(rectangle
+  			(start -5.08 7.62)
+  			(end 5.08 -7.62)
+  			(stroke
+  				(width 0.254)
+  				(type default)
+  			)
+  			(fill
+  				(type background)
+  			)
+  		)
+  	)
+  	(embedded_fonts no)
+  )
+)

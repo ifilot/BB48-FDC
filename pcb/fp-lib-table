@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "BB48")(type "KiCad")(uri "${KIPRJMOD}/components/BB48.pretty")(options "")(descr "Olimex RP2350-PICO2-BB48 module footprints"))
+)
